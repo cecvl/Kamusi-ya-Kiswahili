@@ -17,7 +17,8 @@ type WordEntry struct {
 
 // LoadData reads the JSON data from the file and unmarshals it into a map with numbered keys.
 func LoadData() (map[string]WordEntry, error) {
-    file, err := os.Open("data/words.json")
+    // file location hard coded
+	file, err := os.Open("C:\\Users\\user\\km\\data\\words.json")
     if err != nil {
         return nil, fmt.Errorf("failed to open data file: %v", err)
     }
