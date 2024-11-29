@@ -6,10 +6,13 @@ import (
 	"github.com/spf13/cobra"
 )
 
+var version = "v0.1.0"
+
 var rootCmd = &cobra.Command{
     Use:   "km",
+    Version: version,
     Short: "CLI to search word meanings",
-    Long:  "KAMUSI YA KISWAHILI : MAANA YA MANENO YA KISWAHILI",
+    Long:  "SEARCH FOR MEANING OF KISWAHILI WORDS | TAFUTA MAANA YA MANENO YA KISWAHILI",
 }
 
 func Execute() {

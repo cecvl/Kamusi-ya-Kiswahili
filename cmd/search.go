@@ -8,8 +8,9 @@ import (
 )
 
 var searchCmd = &cobra.Command{
-    Use:   "s [word]",
-    Short: "Search for a word",
+    Use:   "search [word]",
+    Aliases: []string{"s"},
+    Short: "Search for a word | Tafuta neno",
     Args:  cobra.ExactArgs(1),
     Run: func(cmd *cobra.Command, args []string) {
         result, err := word.Search(args[0])
