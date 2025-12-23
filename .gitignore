@@ -35,3 +35,12 @@ Thumbs.db
 # Build artifacts
 dist/
 build/
+
+# Logs
+*.log
+
+*.txt
+
+# SQLite temporary files
+*.db-shm
+*.db-wal
